@@ -1,5 +1,5 @@
 class Author < ApplicationRecord
-    validates :full_name, presence: true, uniqueness: true
+    validates :full_name, presence: true
 
     def self.paginate_data(params)
       authors = self
